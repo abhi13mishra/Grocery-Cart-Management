@@ -1,0 +1,15 @@
+<script>
+    let item = ["Apple","Bananas","Bread","Milk"];
+    let cart = [];
+    for(let i=0; i<item.length; i++){
+        cart.push(item[i]);
+    }
+     cart.pop();
+     //console.log(cart);
+  let res = {
+    totalItems: cart.length,
+    item : cart,
+    removedItem: item[item.length-1]
+  }
+  console.log(res);
+</script>
